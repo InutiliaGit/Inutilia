@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InutilIA</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #39ff14; /* verde fósforo */
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .terminal {
+      font-size: 1.5rem;
+      white-space: pre;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 0.7ch;
+      background-color: #39ff14;
+      animation: blink 1s steps(1) infinite;
+      margin-left: 2px;
+    }
+
+    @keyframes blink {
+      50% { background-color: transparent; }
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    > Hola mun<span class="cursor"></span>
+  </div>
+</body>
+</html>
