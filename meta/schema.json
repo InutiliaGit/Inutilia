@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Chindogu Metadata Schema",
+  "type": "object",
+  "required": ["nombre", "autor", "contacto", "descripcion", "version", "fecha_creacion", "tags"],
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "description": "Nombre del chindogu"
+    },
+    "autor": {
+      "type": "string",
+      "description": "Identificador del autor (username, alias, etc.)"
+    },
+    "contacto": {
+      "type": "string",
+      "format": "email",
+      "description": "Email o contacto válido para reclutar al creador si hace falta"
+    },
+    "descripcion": {
+      "type": "string",
+      "description": "Breve descripción del chindogu"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$",
+      "description": "Versión inicial. Ej: 1.0"
+    },
+    "fecha_creacion": {
+      "type": "string",
+      "format": "date",
+      "description": "Fecha de creación en formato ISO: YYYY-MM-DD"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Lista de tags conceptuales, técnicos o estéticos"
+    },
+    "repositorio": {
+      "type": "string",
+      "format": "uri",
+      "description": "Link al repositorio si es externo (opcional)"
+    }
+  }
+}
