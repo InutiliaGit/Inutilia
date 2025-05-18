@@ -1,0 +1,52 @@
+/* General */
+body {
+  background-color: #121212; /* Fondo oscuro */
+  color: #f5f5f5;            /* Texto claro y legible */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+nav .nav-link {
+  color: #f5f5f5;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav .nav-link:hover {
+  color: #bbbbbb;
+  text-decoration: none; /* Quitar subrayado al hacer hover */
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #333;
+}
+
+footer a {
+  color: #bbbbbb;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: none; /* También para footer links */
+}
+
+/* Comentario en el centro (modo escondido/estético) */
+.subtle-comment {
+  font-size: 1rem;
+  color: #3a3a3a; /* Muy similar al fondo, pero visible si se presta atención */
+  user-select: none;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  transition: opacity 0.4s ease;
+}
